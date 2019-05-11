@@ -16,22 +16,24 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assesment;
-
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+package com.drclb.assignment;
 
 /**
  * This assignment test the java 8 skills using below use case.
  *
- * Use case: A school, would like to group all students by their location to check region diversity and
- * prepare a marketing campaign
+ * Use case: In a college, each student has option to pick number of subjects in a course. As per University,
+ * regulation, if student want to enroll in a full time course, He/she has to take a min number of subjects.
+ * Task is to find the number of subjects a student opt for in a course.
+ *
  */
-public class GroupStudentsByLocation {
+public class FindTotalSubjects {
 
-    public Map<String, List<Student>> process(List<Student> students) {
+    public long calculateTotalSubjects(Student student) {
 
-        return null; // TODO - assignment task
+        return process(student);
+    }
+
+    private long process(Student student) {
+        return 0; // TODO - assignment task
     }
 }

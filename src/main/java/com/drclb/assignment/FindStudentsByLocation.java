@@ -16,24 +16,23 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assesment;
+package com.drclb.assignment;
+
+import java.util.Collections;
+import java.util.List;
 
 /**
  * This assignment test the java 8 skills using below use case.
  *
- * Use case: In a college, each student has option to pick number of subjects in a course. As per University,
- * regulation, if student want to enroll in a full time course, He/she has to take a min number of subjects.
- * Task is to find the number of subjects a student opt for in a course.
- *
+ * Use case: A non profit organization organize an event, where they want to invite students from a specific
+ * location. For this, this orgizanation has already contacted all the schools and gather list of students
+ * and created a master list of students out of it .
+ * Task is to extract a sub set of students from the master list, so that the sub list can be processed for
+ * sending invitations
  */
-public class FindTotalSubjects {
+public class FindStudentsByLocation {
 
-    public long calculateTotalSubjects(Student student) {
-
-        return process(student);
-    }
-
-    private long process(Student student) {
-        return 0; // TODO - assignment task
+    public List<Student> getNumberOfStudentsByLocation(String studentsFromLocation, List<Student> students) {
+        return Collections.emptyList(); //TODO - assignment task
     }
 }

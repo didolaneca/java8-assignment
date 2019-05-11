@@ -18,8 +18,6 @@
 
 package com.drclb.assignment;
 
-import com.drclb.assesment.Student;
-import com.drclb.assesment.GroupStudentsByLocation;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

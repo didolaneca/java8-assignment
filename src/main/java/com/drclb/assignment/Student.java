@@ -16,7 +16,7 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assesment;
+package com.drclb.assignment;
 
 import java.util.Map;
 import java.util.Objects;

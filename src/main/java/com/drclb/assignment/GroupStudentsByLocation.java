@@ -16,25 +16,21 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assesment;
+package com.drclb.assignment;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Map;
 
 /**
  * This assignment test the java 8 skills using below use case.
  *
- * Use case: In a school there are different classes and each class has list if students. Due to lack of teachers,
- * school decided to combine couple of classes and combine all students from those classes into one.
+ * Use case: A school, would like to group all students by their location to check region diversity and
+ * prepare a marketing campaign
  */
-public class CombineStudentsFromDifferentClasses {
-    public List<Student> process(List<Student>... students) {
-        return process(Arrays.asList(students));
-    }
+public class GroupStudentsByLocation {
 
-    public List<Student> process(List<List<Student>> studentFromClass) {
-        return Collections.emptyList(); // TODO - assignment task
+    public Map<String, List<Student>> process(List<Student> students) {
+
+        return null; // TODO - assignment task
     }
 }

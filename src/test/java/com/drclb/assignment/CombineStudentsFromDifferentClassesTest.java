@@ -19,8 +19,6 @@
 package com.drclb.assignment;
 
 
-import com.drclb.assesment.CombineStudentsFromDifferentClasses;
-import com.drclb.assesment.Student;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

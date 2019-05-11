@@ -16,24 +16,24 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assesment;
+package com.drclb.assignment;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * This assignment test the java 8 skills using below use case.
  *
- * Use case: A non profit organization organize an event, where they want to invite students from a specific
- * location. For this, this orgizanation has already contacted all the schools and gather list of students
- * and created a master list of students out of it .
- * Task is to extract a sub set of students from the master list, so that the sub list can be processed for
- * sending invitations
+ * Use case: In a school there are different classes and each class has list if students. Due to lack of teachers,
+ * school decided to combine couple of classes and combine all students from those classes into one.
  */
-public class FindStudentsByLocation {
+public class CombineStudentsFromDifferentClasses {
+    public List<Student> process(List<Student>... students) {
+        return process(Arrays.asList(students));
+    }
 
-    public List<Student> getNumberOfStudentsByLocation(String studentsFromLocation, List<Student> students) {
-        return Collections.emptyList(); //TODO - assignment task
+    public List<Student> process(List<List<Student>> studentFromClass) {
+        return Collections.emptyList(); // TODO - assignment task
     }
 }

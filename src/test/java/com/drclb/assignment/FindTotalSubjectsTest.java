@@ -18,8 +18,6 @@
 
 package com.drclb.assignment;
 
-import com.drclb.assesment.FindTotalSubjects;
-import com.drclb.assesment.Student;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
