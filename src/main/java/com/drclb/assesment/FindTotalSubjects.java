@@ -20,7 +20,11 @@ package com.drclb.assesment;
 
 /**
  * This assignment test the java 8 skills using below use case.
- * 
+ *
+ * Use case: In a college, each student has option to pick number of subjects in a course. As per University,
+ * regulation, if student want to enroll in a full time course, He/she has to take a min number of subjects.
+ * Task is to find the number of subjects a student opt for in a course.
+ *
  */
 public class FindTotalSubjects {
 
@@ -30,6 +34,6 @@ public class FindTotalSubjects {
     }
 
     private long process(Student student) {
-        return 0; // TODO
+        return 0; // TODO - assignment task
     }
 }

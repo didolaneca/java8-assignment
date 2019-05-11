@@ -18,12 +18,18 @@
 
 package com.drclb.assesment;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * This assignment test the java 8 skills using below use case.
+ *
+ * Use case: Task is to get list of subject names associated with student.
+ */
 public class GetListOfSubjects {
 
-    public List<String> process(Student student){
-        return null; // TODO
+    public List<String> process(Student student) {
+        return Collections.emptyList(); // TODO - assignment task
     }
 }

@@ -24,7 +24,7 @@ import java.util.Objects;
 public class Student {
     int _rollNumber;
     String _name;
-    Map<String, Integer> _examScore;
+    Map<String, Integer> _examScore; // Map<subject_name,grade>
     String _location;
 
 
