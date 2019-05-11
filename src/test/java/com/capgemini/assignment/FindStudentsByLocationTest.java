@@ -16,35 +16,31 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assignment;
+package com.capgemini.assignment;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 @Test
-public class GroupStudentsByLocationTest {
+public class FindStudentsByLocationTest {
+    private static final String STUDENT_LOC_TO_SEARCH = "canada";
 
     @Test
-    public void testGrouping(){
+    public void testLocationStudentExtractorByLocation() {
         List<Student> students = Arrays.asList(
-                new Student(1, "student1", null, "canada"),
+                new Student(1, "student1", null, STUDENT_LOC_TO_SEARCH),
                 new Student(2, "student2", null, "Usa"),
                 new Student(3, "student3", null, "India"),
-                new Student(4, "student4", null, "canada"),
-                new Student(5, "student5", null, "canada"),
-                new Student(6, "student6", null, "canada")
+                new Student(4, "student4", null, STUDENT_LOC_TO_SEARCH),
+                new Student(5, "student5", null, STUDENT_LOC_TO_SEARCH),
+                new Student(6, "student6", null, STUDENT_LOC_TO_SEARCH)
         );
-
-        Map<String, List<Student>> studentsByLoc = new GroupStudentsByLocation().process(students);
-        Assert.assertTrue(studentsByLoc.get("canada").size() == 4);
-        Assert.assertTrue(studentsByLoc.get("Usa").size() == 1);
-        Assert.assertTrue(studentsByLoc.get("India").size() == 1);
-        Assert.assertTrue(studentsByLoc.get("canada").contains(new Student(1, "student1", null, "canada")));
-        Assert.assertFalse(studentsByLoc.get("Usa").contains(new Student(1, "student1", null, "canada")));
-        Assert.assertTrue(studentsByLoc.get("India").contains(new Student(3, "student3", null, "India")));
+        List<Student> actualResult = new FindStudentsByLocation().getNumberOfStudentsByLocation(STUDENT_LOC_TO_SEARCH, students);
+        Assert.assertEquals(actualResult.size(), 4);
+        Assert.assertFalse(actualResult.contains( new Student(2, "student2", null, "Usa")));
+        Assert.assertTrue(actualResult.contains(new Student(1, "student1", null, STUDENT_LOC_TO_SEARCH)));
     }
 }

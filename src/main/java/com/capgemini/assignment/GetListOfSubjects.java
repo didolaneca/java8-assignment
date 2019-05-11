@@ -16,30 +16,19 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assignment;
+package com.capgemini.assignment;
 
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
-@Test
-public class CombineStudentsFromDifferentClassesTest {
+/**
+ * This assignment test the java 8 skills using below use case.
+ *
+ * Use case: Task is to get list of subject names associated with student.
+ */
+public class GetListOfSubjects {
 
-    @Test
-    public void testClassCombiner() {
-        List<Student> class1 = Arrays.asList(
-                new Student(1, "Student1-class1", null, null),
-                new Student(2, "student-2-class1", null, null)
-        );
-        List<Student> class2 = Arrays.asList(
-                new Student(1, "Student1-class1", null, null),
-                new Student(2, "student-2-class1", null, null)
-        );
-
-        List<Student> actual = new CombineStudentsFromDifferentClasses().process(class1, class2);
-        Assert.assertEquals(actual.size(), 4);
+    public List<String> process(Student student) {
+        return Collections.emptyList(); // TODO - assignment task
     }
 }

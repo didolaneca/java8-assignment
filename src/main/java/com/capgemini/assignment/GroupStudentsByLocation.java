@@ -16,24 +16,21 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assignment;
+package com.capgemini.assignment;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * This assignment test the java 8 skills using below use case.
  *
- * Use case: In a college, each student has option to pick number of subjects in a course. As per University,
- * regulation, if student want to enroll in a full time course, He/she has to take a min number of subjects.
- * Task is to find the number of subjects a student opt for in a course.
- *
+ * Use case: A school, would like to group all students by their location to check region diversity and
+ * prepare a marketing campaign
  */
-public class FindTotalSubjects {
+public class GroupStudentsByLocation {
 
-    public long calculateTotalSubjects(Student student) {
+    public Map<String, List<Student>> process(List<Student> students) {
 
-        return process(student);
-    }
-
-    private long process(Student student) {
-        return 0; // TODO - assignment task
+        return null; // TODO - assignment task
     }
 }

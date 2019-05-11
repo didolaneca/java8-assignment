@@ -16,20 +16,21 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assignment;
+package com.capgemini.assignment;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-import static org.testng.Assert.assertEquals;
-
 @Test
-public class FindTotalSubjectsTest {
+public class GetListOfSubjectsTest {
 
     @Test
-    public void testTotalSubjectsForASpecificStudent(){
+    public void testSubjects(){
         Map<String, Integer> subjects = new HashMap<>();
         subjects.put("subject-1",10);
         subjects.put("subject-2",10);
@@ -41,7 +42,13 @@ public class FindTotalSubjectsTest {
         subjects.put("subject-8",10);
         subjects.put("subject-9",10);
 
+        List<String> expectedList = new ArrayList<>();
+        for (int i=1;i<=9;i++){
+            expectedList.add("subject-"+i);
+        }
+
         Student student = new Student(1,"Student-1", subjects, "canada");
-        assertEquals(new FindTotalSubjects().calculateTotalSubjects(student),9);
+        List<String> actualSubjectList = new GetListOfSubjects().process(student);
+        Assert.assertTrue(actualSubjectList.containsAll(expectedList));
     }
 }

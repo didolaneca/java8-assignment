@@ -16,7 +16,7 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assignment;
+package com.capgemini.assignment;
 
 import java.util.Map;
 import java.util.Objects;

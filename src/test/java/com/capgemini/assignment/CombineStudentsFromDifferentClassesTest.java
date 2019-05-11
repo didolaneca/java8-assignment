@@ -16,39 +16,30 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assignment;
+package com.capgemini.assignment;
+
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 @Test
-public class GetListOfSubjectsTest {
+public class CombineStudentsFromDifferentClassesTest {
 
     @Test
-    public void testSubjects(){
-        Map<String, Integer> subjects = new HashMap<>();
-        subjects.put("subject-1",10);
-        subjects.put("subject-2",10);
-        subjects.put("subject-3",10);
-        subjects.put("subject-4",10);
-        subjects.put("subject-5",10);
-        subjects.put("subject-6",10);
-        subjects.put("subject-7",10);
-        subjects.put("subject-8",10);
-        subjects.put("subject-9",10);
+    public void testClassCombiner() {
+        List<Student> class1 = Arrays.asList(
+                new Student(1, "Student1-class1", null, null),
+                new Student(2, "student-2-class1", null, null)
+        );
+        List<Student> class2 = Arrays.asList(
+                new Student(1, "Student1-class1", null, null),
+                new Student(2, "student-2-class1", null, null)
+        );
 
-        List<String> expectedList = new ArrayList<>();
-        for (int i=1;i<=9;i++){
-            expectedList.add("subject-"+i);
-        }
-
-        Student student = new Student(1,"Student-1", subjects, "canada");
-        List<String> actualSubjectList = new GetListOfSubjects().process(student);
-        Assert.assertTrue(actualSubjectList.containsAll(expectedList));
+        List<Student> actual = new CombineStudentsFromDifferentClasses().process(class1, class2);
+        Assert.assertEquals(actual.size(), 4);
     }
 }

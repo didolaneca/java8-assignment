@@ -16,21 +16,23 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assignment;
+package com.capgemini.assignment;
 
+import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
 /**
  * This assignment test the java 8 skills using below use case.
  *
- * Use case: A school, would like to group all students by their location to check region diversity and
- * prepare a marketing campaign
+ * Use case: A non profit organization organize an event, where they want to invite students from a specific
+ * location. For this, this orgizanation has already contacted all the schools and gather list of students
+ * and created a master list of students out of it .
+ * Task is to extract a sub set of students from the master list, so that the sub list can be processed for
+ * sending invitations
  */
-public class GroupStudentsByLocation {
+public class FindStudentsByLocation {
 
-    public Map<String, List<Student>> process(List<Student> students) {
-
-        return null; // TODO - assignment task
+    public List<Student> getNumberOfStudentsByLocation(String studentsFromLocation, List<Student> students) {
+        return Collections.emptyList(); //TODO - assignment task
     }
 }

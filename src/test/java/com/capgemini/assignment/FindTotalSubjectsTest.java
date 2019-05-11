@@ -16,19 +16,32 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.drclb.assignment;
+package com.capgemini.assignment;
 
-import java.util.Collections;
-import java.util.List;
+import org.testng.annotations.Test;
 
-/**
- * This assignment test the java 8 skills using below use case.
- *
- * Use case: Task is to get list of subject names associated with student.
- */
-public class GetListOfSubjects {
+import java.util.HashMap;
+import java.util.Map;
 
-    public List<String> process(Student student) {
-        return Collections.emptyList(); // TODO - assignment task
+import static org.testng.Assert.assertEquals;
+
+@Test
+public class FindTotalSubjectsTest {
+
+    @Test
+    public void testTotalSubjectsForASpecificStudent(){
+        Map<String, Integer> subjects = new HashMap<>();
+        subjects.put("subject-1",10);
+        subjects.put("subject-2",10);
+        subjects.put("subject-3",10);
+        subjects.put("subject-4",10);
+        subjects.put("subject-5",10);
+        subjects.put("subject-6",10);
+        subjects.put("subject-7",10);
+        subjects.put("subject-8",10);
+        subjects.put("subject-9",10);
+
+        Student student = new Student(1,"Student-1", subjects, "canada");
+        assertEquals(new FindTotalSubjects().calculateTotalSubjects(student),9);
     }
 }
