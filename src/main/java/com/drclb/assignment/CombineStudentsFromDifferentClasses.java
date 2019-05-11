@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * This assignment test the java 8 skills using below use case.
  *
- * Use case: In a school there are different classes and each class has list if students. Due to lack of teachers,
+ * Use case: In a school there are different classes and each class has list of students. Due to lack of teachers,
  * school decided to combine couple of classes and combine all students from those classes into one.
  */
 public class CombineStudentsFromDifferentClasses {
