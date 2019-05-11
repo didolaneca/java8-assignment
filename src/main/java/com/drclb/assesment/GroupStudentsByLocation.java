@@ -22,10 +22,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * This assignment test the java 8 skills using below use case.
+ *
+ * Use case: A school, would like to group all students by their location to check region diversity and
+ * prepare a marketing campaign
+ */
 public class GroupStudentsByLocation {
 
     public Map<String, List<Student>> process(List<Student> students) {
 
-        return null; // TODO
+        return null; // TODO - assignment task
     }
 }
