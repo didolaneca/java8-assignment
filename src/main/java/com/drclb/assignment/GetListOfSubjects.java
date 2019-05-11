@@ -18,6 +18,8 @@
 
 package com.drclb.assignment;
 
+import com.drclb.assignment.common.Student;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -29,6 +31,9 @@ import java.util.List;
 public class GetListOfSubjects {
 
     public List<String> process(Student student) {
+        List<String> subjectsNameOfAStudent = Collections.emptyList();
+        //TODO - add your logic here and return the list of subject names associated with it
+        // @hint- leverage Student.getExamScore(), which returns a map of subject_name and associated grades
         return Collections.emptyList(); // TODO - assignment task
     }
 }

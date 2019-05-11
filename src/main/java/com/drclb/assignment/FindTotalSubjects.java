@@ -18,22 +18,22 @@
 
 package com.drclb.assignment;
 
+import com.drclb.assignment.common.Student;
+
 /**
  * This assignment test the java 8 skills using below use case.
- *
+ * <p>
  * Use case: In a college, each student has option to pick number of subjects in a course. As per University,
  * regulation, if student want to enroll in a full time course, He/she has to take a min number of subjects.
  * Task is to find the number of subjects a student opt for in a course.
- *
  */
 public class FindTotalSubjects {
 
     public long calculateTotalSubjects(Student student) {
 
-        return process(student);
-    }
-
-    private long process(Student student) {
-        return 0; // TODO - assignment task
+        long totalMarks = 0;
+        // TODO - add your logic here and return total grades
+        // @hint - leverage Student.getExamScore() to get list of subjects and grade/marks associated with that.
+        return totalMarks;
     }
 }

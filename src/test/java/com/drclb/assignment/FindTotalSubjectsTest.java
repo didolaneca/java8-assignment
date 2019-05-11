@@ -18,6 +18,7 @@
 
 package com.drclb.assignment;
 
+import com.drclb.assignment.common.Student;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;

@@ -18,6 +18,9 @@
 
 package com.drclb.assignment;
 
+import com.drclb.assignment.common.Student;
+
+import javax.management.remote.SubjectDelegationPermission;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -30,10 +33,8 @@ import java.util.List;
  */
 public class CombineStudentsFromDifferentClasses {
     public List<Student> process(List<Student>... students) {
-        return process(Arrays.asList(students));
-    }
-
-    public List<Student> process(List<List<Student>> studentFromClass) {
-        return Collections.emptyList(); // TODO - assignment task
+        List<Student> studentsFromAllClasses= Collections.emptyList();
+        //TODO - add your logic here and return appropriate list of students
+        return studentsFromAllClasses; // TODO - assignment task
     }
 }
