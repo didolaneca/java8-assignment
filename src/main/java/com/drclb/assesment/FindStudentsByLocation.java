@@ -18,12 +18,22 @@
 
 package com.drclb.assesment;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * This assignment test the java 8 skills using below use case.
+ *
+ * Use case: A non profit organization organize an event, where they want to invite students from a specific
+ * location. For this, this orgizanation has already contacted all the schools and gather list of students
+ * and created a master list of students out of it .
+ * Task is to extract a sub set of students from the master list, so that the sub list can be processed for
+ * sending invitations
+ */
 public class FindStudentsByLocation {
 
     public List<Student> getNumberOfStudentsByLocation(String studentsFromLocation, List<Student> students) {
-        return null; //TODO
+        return Collections.emptyList(); //TODO - assignment task
     }
 }

@@ -18,6 +18,10 @@
 
 package com.drclb.assesment;
 
+/**
+ * This assignment test the java 8 skills using below use case.
+ * 
+ */
 public class FindTotalSubjects {
 
     public long calculateTotalSubjects(Student student) {
