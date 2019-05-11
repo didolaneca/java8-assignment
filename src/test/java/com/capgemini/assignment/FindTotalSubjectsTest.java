@@ -18,6 +18,7 @@
 
 package com.capgemini.assignment;
 
+import com.capgemini.assignment.common.Student;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;

@@ -18,6 +18,9 @@
 
 package com.capgemini.assignment;
 
+import com.capgemini.assignment.common.Student;
+
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -30,7 +33,8 @@ import java.util.Map;
 public class GroupStudentsByLocation {
 
     public Map<String, List<Student>> process(List<Student> students) {
-
-        return null; // TODO - assignment task
+        Map<String, List<Student>> studentsGroupedByLocation = Collections.EMPTY_MAP;
+        // TODO - add your logic here and return appropriate map object
+        return studentsGroupedByLocation; // TODO - assignment task
     }
 }

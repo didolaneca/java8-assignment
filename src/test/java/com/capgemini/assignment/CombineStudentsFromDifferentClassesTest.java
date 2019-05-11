@@ -19,6 +19,7 @@
 package com.capgemini.assignment;
 
 
+import com.capgemini.assignment.common.Student;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

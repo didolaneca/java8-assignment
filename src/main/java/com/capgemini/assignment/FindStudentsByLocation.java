@@ -18,6 +18,8 @@
 
 package com.capgemini.assignment;
 
+import com.capgemini.assignment.common.Student;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -33,6 +35,8 @@ import java.util.List;
 public class FindStudentsByLocation {
 
     public List<Student> getNumberOfStudentsByLocation(String studentsFromLocation, List<Student> students) {
-        return Collections.emptyList(); //TODO - assignment task
+            List<Student> studentsBelongToSpecificLocation = Collections.emptyList();
+        //TODO - add your logic here
+        return studentsBelongToSpecificLocation; //TODO - assignment task
     }
 }
